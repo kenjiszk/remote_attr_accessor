@@ -1,3 +1,13 @@
 = RemoteAttrAccessor
 
+## Purpose
+
+## Settings
+
+## Get remote attribute
+
+## Set remote attribute
+
+## Bulk get from remote attribute
+
 This project rocks and uses MIT-LICENSE.
