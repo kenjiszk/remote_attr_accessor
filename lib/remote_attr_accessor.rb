@@ -1,0 +1,2 @@
+module RemoteAttrAccessor
+end
