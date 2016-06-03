@@ -1,29 +1,24 @@
 module RemoteAttrAccessor
+  # Override by lib/remote_attr_accessor/config.rb
   class Config
-=begin
     def self.id_name
-      # Override as you want
-      @id_name ||= 'id'
+      'id'
     end
 
     def self.prefix
-      # Override as you want
-      @prefix ||= 'remote_'
+      'remote_'
     end
 
     def self.remote_json_key
-      # Override as you want
-      @remote_json_key ||= 'users'
+      'users'
     end
 
     def self.remote_attrs
-      # Override as you want
-      @remote_attrs ||= [:email, :last_name, :first_name]
+      [:email, :last_name, :first_name]
     end
 
     def self.remote_attrs_with_prefix
       @remote_attrs_with_prefix = remote_attrs.map{|attr| "#{prefix}#{attr}"}
     end
-=end
   end
 end
