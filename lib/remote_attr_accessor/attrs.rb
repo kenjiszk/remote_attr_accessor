@@ -1,7 +1,7 @@
 module RemoteAttrAccessor::Attrs
   extend RemoteAttrAccessor::Base
 
-  Dir.glob('lib/remote_attr_accessor/*.rb').each { |r| require r}
+  Dir.glob("#{Dir.pwd}/lib/remote_attr_accessor/*.rb").each { |r| require r}
 
   config.remote_attrs.each do |attr|
     attr_with_prefix = config.prefix + attr.to_s
