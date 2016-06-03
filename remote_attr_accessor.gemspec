@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.authors     = ["kenji.suzuki"]
   s.email       = ["kenji.suzuki.1984@gmail.com"]
   s.homepage    = ""
-  s.summary     = "Summary of RemoteAttrAccessor."
-  s.description = "Description of RemoteAttrAccessor."
+  s.summary     = "Remote Model Attribute Accessor."
+  s.description = "Access to Remote Rails Model by API and set to Local Model attribute."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
