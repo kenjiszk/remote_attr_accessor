@@ -3,7 +3,7 @@ module RemoteAttrAccessor::Attrs
 
   # Tricky
   def method_missing(name, *args)
-    Rails.logger.info(name)
+    Rails.logger.info("method_missiong #{name}")
     # skip if name is not included in remote_attrs_with_prefix
     super unless config.remote_attrs_with_prefix.grep(/#{name}/)
 
