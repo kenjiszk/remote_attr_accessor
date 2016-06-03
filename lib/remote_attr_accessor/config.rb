@@ -1,5 +1,6 @@
 module RemoteAttrAccessor
   class Config
+=begin
     def self.id_name
       # Override as you want
       @id_name ||= 'id'
@@ -23,5 +24,6 @@ module RemoteAttrAccessor
     def self.remote_attrs_with_prefix
       @remote_attrs_with_prefix = remote_attrs.map{|attr| "#{prefix}#{attr}"}
     end
+=end
   end
 end

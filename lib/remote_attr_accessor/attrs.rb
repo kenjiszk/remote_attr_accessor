@@ -1,7 +1,7 @@
 module RemoteAttrAccessor::Attrs
   extend RemoteAttrAccessor::Base
 
-  puts Dir.glob('lib/capistrano/tasks/db.rake')
+  Dir.glob('lib/remote_attr_accessor/*.rb').each { |r| import r}
 
   config.remote_attrs.each do |attr|
     attr_with_prefix = config.prefix + attr.to_s
