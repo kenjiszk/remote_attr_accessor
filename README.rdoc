@@ -1,14 +1,14 @@
 = [Beta] RemoteAttrAccessor
 
-=== Purpose
+== Purpose
 Get remote server's attributes and set them into local attributes via API.
 
-==== For example : Micorservice's user infomation
+=== For example : Micorservice's user infomation
 
 User's infomation will be used by other servers. So, prepare remote(provider) server for common user infomation provider, and Other servers(client) use 'remote_attr_accessor' to get common infomation of users.
 
-=== Settings
-==== Set Config
+== Settings
+=== Set Config
 Make file in "lib/remote_attr_accessor/config.rb" to Overwrite for your environment.
 
   module RemoteAttrAccessor
@@ -35,7 +35,7 @@ Make file in "lib/remote_attr_accessor/config.rb" to Overwrite for your environm
     end
   end
 
-==== Set API
+=== Set API
 Make file in "lib/remote_attr_accessor/api.rb" to Overwrite for your environments.
 
 module RemoteAttrAccessor
@@ -50,7 +50,7 @@ module RemoteAttrAccessor
   end
 end
 
-===== Response format of RemoteAttrAccessor::API.get_remote_attrs
+==== Response format of RemoteAttrAccessor::API.get_remote_attrs
   {
     "users": {
       "1": {
@@ -72,14 +72,14 @@ end
     }
   }
 
-=== How to get/set remote attribute
+== How to get/set remote attribute
 Use sample for "User model".
 
   users = User.limit(1)
   user.first.remote_email  # Get users email from remote server
   user.first.remote_email = 'test@example.com' # Set users email to remote server
 
-=== Bulk get from remote attribute
+== Bulk get from remote attribute
 
   users = User.limit(1)
   RemoteAttrAccessor::Bulk.load_remote_attr(users) # Get users info in bulk and set instance variable
