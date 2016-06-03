@@ -1,7 +1,8 @@
 module RemoteAttrAccessor::Bulk
   extend RemoteAttrAccessor::Base
 
-  def load_remote_attr(locals, id_name)
+  def load_remote_attr(locals)
+    id_name = config.id_name
     ids = Array.new
     if locals.is_a?(ActiveRecord::Relation)
       locals.each do |local|
