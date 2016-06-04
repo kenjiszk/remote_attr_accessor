@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = RemoteAttrAccessor::VERSION
   s.authors     = ["kenji.suzuki"]
   s.email       = ["kenji.suzuki.1984@gmail.com"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/kenjiszk/remote_attr_accessor"
   s.summary     = "Remote Model Attribute Accessor."
   s.description = "Access to Remote Rails Model by API and set to Local Model attribute."
   s.license     = "MIT"
