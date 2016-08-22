@@ -12,7 +12,7 @@ module RemoteAttrAccessor::Bulk
       ids << locals.send(id_name)
     end
 
-    remote_attrs_json = api.get_remote_attrs(ids)
+    remote_attrs_json = api.get_remote_attrs_with_indifferent_access(ids)
     return if remote_attrs_json == {}
     remote_attrs = remote_attrs_json[config.remote_json_key]
 
