@@ -12,6 +12,7 @@ module RemoteAttrAccessor::Attrs
         instance_variable_set(
           "@#{attr_with_prefix}", 
           RemoteAttrAccessor::Api.get_remote_attrs_with_indifferent_access([remote_id])[config.remote_json_key][remote_id][attr.to_s]
+            rescue nil
         )
     end
 
