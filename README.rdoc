@@ -38,17 +38,17 @@ Make file in "lib/remote_attr_accessor/config.rb" to Overwrite for your environm
 === Set API
 Make file in "lib/remote_attr_accessor/api.rb" to Overwrite for your environments.
 
-module RemoteAttrAccessor
-  class Api
-    def self.get_remote_attrs(ids)
-      # Write here API access code
-    end
+  module RemoteAttrAccessor
+    class Api
+      def self.get_remote_attrs(ids)
+        # Write here API access code
+      end
 
-    def self.upsert_remote_attr(params)
-      # Write here API access code
+      def self.upsert_remote_attr(params)
+        # Write here API access code
+      end
     end
   end
-end
 
 ==== Response format of RemoteAttrAccessor::API.get_remote_attrs
   {
